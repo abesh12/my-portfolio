@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- LIGHT LEAK VIDEO -->
+    <video class="bg-video" autoplay loop muted playsinline id="bgVid">
+        <source src="lightleak.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <div class="container nav">
+            <div class="logo">MySite</div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="btn-primary" onclick="scrollToSection('contact')">Say hi</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero container">
+            <div>
+                <div class="hero-subtitle">PORTFOLIO </div>
+                <h1 class="hero-heading">Hi, I'm <span>Abesh!</span>.</h1>
+                <p class="hero-text">
+                    Greetings everyone, this is my personal portfolio!
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="scrollToSection('projects')">View projects</button>
+                    <button class="btn-secondary" onclick="scrollToSection('about')">More about me</button>
+                </div>
+                <br>
+
+                <div class="hero-meta">
+                    <span><span class="badge">Now</span> Open for opportunities</span>
+                    <span>Remote based</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <div><span class="status-dot"></span>Online</div>
+                        <div>v1.0</div>
+                    </div>
+
+                    <div class="hero-card-main">
+                        <div class="hero-card-title"><img src="img1.jpg" alt="pic" width="500" style="opacity: 1.0;">
+                        </div>
+
+                        <div class="pill-row">
+                            <br>
+                            </ /span class="pill imgtxt">
+                            <p style="font-family: 'Calibri' ;">
+                            <p style="font-size: 16px;">Abesh Singha</p>
+                            </p>
+
+                            </span>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="hero-floating">
+                    <div class="glow-orb one"></div>
+                    <div class="glow-orb purple two"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="container">
+            <div class="section-header">
+                <div class="section-kicker">
+                    <p style="font-size: 17px;">About</style>
+                </div>
+                <h2 class="section-title" style="font-family: 'Calibri' ;">Abesh Singha | Btech (MECH)</h2>
+                <p class="section-description" style="font-size: 17px;">
+                    <i>A warm welcome to everyone,</i>
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am Abesh, currently 2nd year pursuing my major in mechanical engineering, in NIT Silchar.</p>
+                    <p>I will define myself as an extrovert person, i like interacting with new people, making new
+                        friends and connections, and strengthening skills and knowledge. my hobbies include reading
+                        documentaries, surfing webpages, hunt for new things, and many more.</p>
+
+                    <ul class="about-list">
+                        <li><b>Things i am good at:</b></li><br>
+                        <li>Problem Solving</li>
+                        <li>AutoCAD</li>
+                        <li>HTML | CSS | JS</li>
+                        <Li>Python</Li>
+                    </ul>
+                </div>
+
+                <aside class="about-card">
+                    <h3>Quick snapshot:</h3>
+                    <p>Robotron module</p>
+                    <div class="about-meta-row">
+                        <p>||||</p>
+                        <img src="img3.jpg" alt="pic" width="175" style="opacity: 1.0;">
+                        <img src="img2.jpg" alt="pic" width="175" style="opacity: 1.0;">
+                        <p>||||</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <br>
+        <br>
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="container">
+            <div class="section-header">
+                <div class="section-kicker" style="font-size: 17px;">Projects</div>
+                <h2 class="section-title">Things i have worked on: </h2>
+                <p class="section-description">These are the projects i have worked on which have been challenging but
+                    was accomplished and somes are listed which are active projects.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-name">Project One</div>
+                    <div class="project-tagline">Spur Gear</div>
+                    <p>Designed a fully functional 3d Spur gear ready for further 3d animation.</p>
+
+                    <div class="project-footer">
+                        <div>Tech: Solidworks</div>
+                        <div class="project-links">
+                            <a href="#">View live</a>
+                            <a href="#">Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-name">Project Two</div>
+                    <div class="project-tagline">Automated YouTube Playlist Downloader<br>
+
+                    </div>
+
+
+                    <p>Uses:
+                        pytube or YouTube API<br>
+                        CLI for input playlist link<br>
+                        Downloads + organizes into folders</p>
+
+                    <div class="project-footer">
+                        <div>Tech: Python</div>
+                        <div class="project-links">
+                            <a href="#">Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-name">Project Three</div>
+                    <div class="project-tagline">Spotify inspired UI(ongoing proj)</div>
+                    <p>A Spotify-inspired music player website with custom playlists, song controls, and a responsive UI
+                    </p>
+
+                    <div class="project-footer">
+                        <div>HTML | TailwindCSS | JS</div>
+                        <div class="project-links">
+                            <a href="#">More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <!-- CONTACT -->
+        <section id="contact" class="container">
+            <div class="section-header">
+                <div class="section-kicker">Contact</div>
+
+            </div>
+
+            <div class="contact-grid" style="font-size: px;">
+                <form onsubmit="handleSubmit(event)">
+                    <label>Name
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>Message
+                        <textarea name="message" required></textarea>
+                    </label>
+
+                    <button type="submit" class="btn-primary">Send message</button>
+                    <p id="form-status" style="font-size: 0.8rem; color: #9ca3af;"></p>
+                </form>
+
+                <aside class="contact-side">
+                    <p>You can also contact me directly:</p>
+                    <ul class="contact-list">
+                        <li><span>Email</span> abesh_ug_24@mech.nits.ac.in</li>
+                        <li><span>Instagram</span> @abeshhhh</li>
+                        <li><span>GitHub / LinkedIn</span>www.linkedin.com/in/
+                            abeshsingha
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Your Name. All rights reserved.</div>
+            <div class="social-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // video speed
+        const vid = document.getElementById("bgVid");
+        if (vid) vid.playbackRate = 1.3;
+
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                window.scrollTo({ top: el.offsetTop - 70, behavior: "smooth" });
+            }
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            document.getElementById("form-status").textContent =
+                "This is a demo form. Connect it to a real backend.";
+            event.target.reset();
+        }
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
